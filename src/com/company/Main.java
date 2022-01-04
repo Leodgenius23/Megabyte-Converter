@@ -2,7 +2,8 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-      LeapYear.isLeapYear(1924);
-//        System.out.println(result);
+//      boolean result = LeapYear.isLeapYear(1924);
+        boolean result = BarkingDog.shouldWakeUp(true, -1);
+      System.out.println(result);
     }
 }
