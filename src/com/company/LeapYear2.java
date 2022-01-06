@@ -1,22 +1,22 @@
 package com.company;
 
 public class LeapYear2 {
-    public static boolean isLeapYear(int year) {
-        if (year >= 1 && year <= 9999) {
-            if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+    public static boolean isLeapYear(int year){
+        if(year >= 1 && year <= 9999){
+            if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
                 return true;
             }
         }
         return false;
     }
 
-    public static int getDaysInMonth(int month, int year) {
-        if (month < 1 || month > 12) {
+    public static int getDaysInMonth(int month, int year){
+        if(month < 1 || month > 12){
             return -1;
         }
-        if (year >= 1 && year <= 9999) {
+        if(year >= 1 && year <= 9999){
             int d;
-            switch (month) {
+            switch(month){
                 case 1:
                 case 3:
                 case 5:
@@ -33,19 +33,17 @@ public class LeapYear2 {
                     d = 30;
                     break;
                 case 2:
-                    if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+                    if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
                         d = 29;
-                    } else {
+                    }else{
                         d = 28;
                     }
                     break;
                 default:
                     d = 0;
                     break;
-
             }
             return d;
-
         }
         return -1;
     }
