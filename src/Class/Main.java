@@ -3,23 +3,76 @@ package Class;
 import com.company.printNumberinWords;
 
 public class Main {
+//    public static boolean isEvenNumber(int number) {
+//        if (number % 2 != 0) {
+//            return false;
+//        }
+//        return true;
+//    }
 
     public static void main(String[] args) {
-        int count = 0;
-        int sum = 0;
-        for (int i = 1; i <= 1000; i++) {
-            if ((i % 3 == 0) && (i % 5 == 0)) {
-                count++;
-                sum += i;
-                System.out.println(i + " divisible by both 3 and 5");
-                if (count == 5) {
-                    System.out.println("Break!");
-                    break;
-                }
-            }
+        System.out.println("The sum of the digits in number 125 is " +
+                sumDigits(125));
+        System.out.println("The sum of the digits in number -125 is " +
+                sumDigits(-125));
+        System.out.println("The sum of the digits in number 4 is " +
+                sumDigits(4));
+        System.out.println("The sum of the digits in number 32123 is " +
+                sumDigits(32123));
+    }
 
+    private static int sumDigits(int number){
+        if(number < 10){
+            return -1;
         }
-        System.out.println("Sum of all the number " + sum);
+        int sum = 0;
+        while(number > 0){
+            //get the least significant digit
+            int digit = number % 10;
+            sum += digit;
+
+            //drop the least significant digit
+            number /= 10;
+        }
+        return sum;
+    }
+//        int number = 4;
+//        int finishNumber = 20;
+//        int count = 0;
+//        while(number <= finishNumber){
+//            number++;
+//            if(!isEvenNumber(number)){
+//                continue;
+//            }
+//            count ++;
+//            System.out.println(number + " is an Even Number");
+//            if(count==5){
+//                break;
+//            }
+//
+//        }S
+//        System.out.println("The total number of Even Number is " +
+//                count);
+//    }
+
+
+//        boolean result = IsEvenNumber.isEvenNumber(2);
+//        System.out.println(result);
+//        int count = 0;
+//        int sum = 0;
+//        for (int i = 1; i <= 1000; i++) {
+//            if ((i % 3 == 0) && (i % 5 == 0)) {
+//                count++;
+//                sum += i;
+//                System.out.println(i + " divisible by both 3 and 5");
+//                if (count == 5) {
+//                    System.out.println("Break!");
+//                    break;
+//                }
+//            }
+//
+//        }
+//        System.out.println("Sum of all the number " + sum);
 //        int count = 0;
 //        for(int j = 1; j <=50; j++){
 //            if(isPrime(j)) {
@@ -55,4 +108,4 @@ public class Main {
 //        }
 //        return true;
     }
-}
+
