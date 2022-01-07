@@ -1,41 +1,31 @@
 package Class;
 
+import com.company.NumberPalindrome;
 import com.company.printNumberinWords;
 
 public class Main {
-//    public static boolean isEvenNumber(int number) {
-//        if (number % 2 != 0) {
-//            return false;
-//        }
-//        return true;
-//    }
+
 
     public static void main(String[] args) {
-        System.out.println("The sum of the digits in number 125 is " +
-                sumDigits(125));
-        System.out.println("The sum of the digits in number -125 is " +
-                sumDigits(-125));
-        System.out.println("The sum of the digits in number 4 is " +
-                sumDigits(4));
-        System.out.println("The sum of the digits in number 32123 is " +
-                sumDigits(32123));
+       boolean result = NumberPalindrome.isPalindrome(-1221);
+        System.out.println(result);
     }
 
-    private static int sumDigits(int number){
-        if(number < 10){
-            return -1;
-        }
-        int sum = 0;
-        while(number > 0){
-            //get the least significant digit
-            int digit = number % 10;
-            sum += digit;
-
-            //drop the least significant digit
-            number /= 10;
-        }
-        return sum;
-    }
+//    private static int sumDigits(int number){
+//        if(number < 10){
+//            return -1;
+//        }
+//        int sum = 0;
+//        while(number > 0){
+//            //get the least significant digit
+//            int digit = number % 10;
+//            sum += digit;
+//
+//            //drop the least significant digit
+//            number /= 10;
+//        }
+//        return sum;
+//    }
 //        int number = 4;
 //        int finishNumber = 20;
 //        int count = 0;
