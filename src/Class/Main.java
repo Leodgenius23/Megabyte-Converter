@@ -1,14 +1,19 @@
 package Class;
 
-import com.company.NumberPalindrome;
-import com.company.printNumberinWords;
+import com.company.*;
 
 public class Main {
 
 
     public static void main(String[] args) {
-       boolean result = NumberPalindrome.isPalindrome(-1221);
+
+        boolean result = ShareDigit.hasSharedDigit(15,55);
         System.out.println(result);
+//        int result = EvenDigitSum.getEvenDigitSum(-22);
+//        System.out.println("Sum of the even digits = " + result);
+////       boolean result = NumberPalindrome.isPalindrome(-1221);
+//        int result = FirstLastDigitSum.sumFirstAndLastDigit(121);
+//        System.out.println(result);
     }
 
 //    private static int sumDigits(int number){
