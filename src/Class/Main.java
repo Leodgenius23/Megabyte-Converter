@@ -4,11 +4,54 @@ import com.company.*;
 
 public class Main {
 
-
+//        if(num < 10){
+//            return -1;
+//        }
+//        int sum = 0;
+//        if(num > 0) {
+//            while (num > 0) {
+//                int digit = num % 10;
+//                sum += digit;
+//                num /= 10;
+//            }
+//        }else{
+//            return -1;
+//        }
+//
+//        return sum;
+//    }
     public static void main(String[] args) {
-
-        boolean result = ShareDigit.hasSharedDigit(15,55);
+        int result = NumberToWords.getDigitCount(1234);
         System.out.println(result);
+        System.out.println("**********************************");
+        int result1 = NumberToWords.reverse(-37683);
+        System.out.println(result1);
+        System.out.println("**********************************");
+        NumberToWords.numberToWords(100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        boolean result2 = LastDigitChecker.hasSameLastDigit(26,45,56);
+//        System.out.println(result2);
+//        int result = sumDigits(125);
+//        System.out.println(result);
+//     boolean result = ShareDigit.hasSharedDigit(15,55);
+//        System.out.println(result);
 //        int result = EvenDigitSum.getEvenDigitSum(-22);
 //        System.out.println("Sum of the even digits = " + result);
 ////       boolean result = NumberPalindrome.isPalindrome(-1221);
