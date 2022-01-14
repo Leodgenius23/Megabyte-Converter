@@ -2,9 +2,14 @@ package Class;
 
 import com.company.*;
 
+import java.sql.SQLOutput;
+
 public class Main {
 
-//        if(num < 10){
+
+
+
+
 //            return -1;
 //        }
 //        int sum = 0;
@@ -21,28 +26,27 @@ public class Main {
 //        return sum;
 //    }
     public static void main(String[] args) {
-        int result = NumberToWords.getDigitCount(1234);
-        System.out.println(result);
-        System.out.println("**********************************");
-        int result1 = NumberToWords.reverse(-37683);
-        System.out.println(result1);
-        System.out.println("**********************************");
-        NumberToWords.numberToWords(100);
+      SimpleCalculator calculator = new SimpleCalculator();
+      calculator.setFirstNumber(5.0);
+      calculator.setSecondNumber(4);
+
+        System.out.println("Add = " + calculator.getAdditionResult());
+        System.out.println("Subtraction = " + calculator.getSubtractionResult());
+
+        calculator.setFirstNumber(5.25);
+        calculator.setSecondNumber(0);
+        System.out.println("Multiply = " + calculator.getMultiplicationResult());
+        System.out.println("Divide = " + calculator.getDivisionResult());
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//        BankAccount acc = new BankAccount();
+//        System.out.println("Bank Account Number: " + acc.getNumber());
+//        System.out.println("Customer Name: " + acc.getCustomerName());
+//        System.out.println("Customer Email: " + acc.getCustomerEmailAddress());
+//        System.out.println("Customer Phone Number: " + acc.getCustomerPhoneNumber());
+//        acc.deposit(500);
+//        acc.withdrawal(100);
 
 
 
@@ -145,5 +149,5 @@ public class Main {
 //            }
 //        }
 //        return true;
-    }
+}
 
